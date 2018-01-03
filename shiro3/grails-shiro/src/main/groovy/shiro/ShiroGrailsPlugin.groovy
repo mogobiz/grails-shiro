@@ -64,8 +64,7 @@ import static javax.servlet.DispatcherType.*
 
 class ShiroGrailsPlugin extends Plugin {
 
-    def version = "1.2.2-SNAPSHOT"
-    def grailsVersion = "1.2 > *"
+    def grailsVersion = "3.0 > *"
     def author = "Peter Ledbrook"
     def authorEmail = "peter@cacoethes.co.uk"
     def title = "Apache Shiro Integration for Grails"
@@ -78,6 +77,10 @@ Enables Grails applications to take advantage of the Apache Shiro security layer
     def license = "APACHE"
     def issueManagement = [system: "JIRA", url: "http://jira.grails.org/browse/GPSHIRO"]
     def scm = [url: "https://github.com/pledbrook/grails-shiro"]
+
+    /*def pluginExcludes = [
+        "grails-app/domain/**"
+    ]*/
 
     def loadAfter = ["controllers", "services", "logging"]
     def observe = ["controllers"]
